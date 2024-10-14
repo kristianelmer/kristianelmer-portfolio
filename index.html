@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristian Elmer - Programmeringsportefølje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+            animation-delay: 0.5s;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .project {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+            animation-delay: 1s;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kristian Elmer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Om meg</a></li>
+                <li><a href="#projects">Prosjekter</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Om meg</h2>
+        <p>Hei! Jeg er Kristian Elmer, en lidenskapelig programmerer med erfaring i [dine programmeringsspråk og teknologier].</p>
+    </section>
+
+    <section id="projects">
+        <h2>Prosjekter</h2>
+        <div class="project">
+            <h3>Prosjekt 1</h3>
+            <p>Beskrivelse av prosjektet ditt. <a href="#">Se prosjektet</a></p>
+        </div>
+        <div class="project">
+            <h3>Prosjekt 2</h3>
+            <p>Beskrivelse av prosjektet ditt. <a href="#">Se prosjektet</a></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Kontakt meg via e-post på <a href="mailto:kristian@example.com">kristian@example.com</a> eller følg meg på <a href="#">LinkedIn</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kristian Elmer</p>
+    </footer>
+</body>
+</html>
