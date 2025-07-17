@@ -178,6 +178,27 @@ section p {
     text-align: center;
 }
 
+/* Projects Container */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.projects-container .project {
+    max-width: 450px;
+    width: 100%;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 950px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* Footer */
 footer {
     background-color: #333;
